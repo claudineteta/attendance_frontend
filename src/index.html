@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive dashboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.bars li .bar').each(function(key, bar) {
+                var parcentage = $(this).data('percentage');
+                $(this).animate({
+                    'height': parcentage + '%'
+                }, 1000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="alarm-outline"></ion-icon></span>
+                        <span class="title">Attandance</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="bookmarks-outline"></ion-icon></span>
+                        <span class="title">Your activity</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="person-add-outline"></ion-icon></span>
+                        <span class="title">Administration</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="accessibility-outline"></ion-icon></span>
+                        <span class="title">Student</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--main-->
+
+        <div class="main">
+
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <!--search-->
+
+                <div class="search">
+                    <label>
+					<input type="text" placeholder="search here">
+					<ion-icon name="search-outline"></ion-icon>
+				</label>
+                </div>
+                <!--user-->
+                <div class="user">
+                    <img src="download.JPG">
+                </div>
+            </div>
+
+
+            <!--chart starts-->
+            <div class="chart_drop">
+                <div class="chart">
+                    <ul class="numbers">
+                        <li><span>100%</span></li>
+                        <li><span>50%</span></li>
+                        <li><span>0%</span></li>
+                    </ul>
+                    <ul class="bars">
+                        <li>
+                            <div class="bar" data-percentage="50"></div><span>option1</span></li>
+                        <li>
+                            <div class="bar" data-percentage="30"></div><span>option2</span></li>
+                        <li>
+                            <div class="bar" data-percentage="60"></div><span>option3</span></li>
+                        <li>
+                            <div class="bar" data-percentage="100"></div><span>option4</span></li>
+                        <li>
+                            <div class="bar" data-percentage="80"></div><span>option5</span></li>
+                        <li>
+                            <div class="bar" data-percentage="20"></div><span>option6</span></li>
+                        <li>
+                            <div class="bar" data-percentage="40"></div><span>option7</span></li>
+
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Years</button>
+                    <div class="dropdown-content">
+                        <a href="#">2020</a>
+                        <a href="#">2021</a>
+                        <a href="#">2022</a>
+                        <a href="#">2023</a>
+                    </div>
+                </div>
+            </div>
+            <!--chart ends-->
+
+            <!--details list-->
+            <div class="details">
+                <div class="recenttable">
+                    <div class="tableHeader">
+                        <h2>Attandance Details</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td> DATE</td>
+                                <td> ID</td>
+                                <td>NAMES</td>
+                                <td>TIME IN</td>
+                                <td> TIME OUT</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>3/11/2021</td>
+                                <td>12</td>
+                                <td>INGABIRE Claudine</td>
+                                <td>7am</td>
+                                <td>5am</td>
+                            </tr>
+                            <tr>
+                                <td>3/11/2021</td>
+                                <td>12</td>
+                                <td>INGABIRE Claudine</td>
+                                <td>7am</td>
+                                <td>5am</td>
+                            </tr>
+                            <tr>
+                                <td>3/11/2021</td>
+                                <td>12</td>
+                                <td>INGABIRE Claudine</td>
+                                <td>7am</td>
+                                <td>5am</td>
+                            </tr>
+                            <tr>
+                                <td>3/11/2021</td>
+                                <td>12</td>
+                                <td>INGABIRE Claudine</td>
+                                <td>7am</td>
+                                <td>5am</td>
+                            </tr>
+                            <tr>
+                                <td>3/11/2021</td>
+                                <td>12</td>
+                                <td>INGABIRE Claudine</td>
+                                <td>7am</td>
+                                <td>5am</td>
+                            </tr>
+                            <tr>
+                                <td>3/11/2021</td>
+                                <td>12</td>
+                                <td>INGABIRE Claudine</td>
+                                <td>7am</td>
+                                <td>5am</td>
+                            </tr>
+                            <tr>
+                                <td>3/11/2021</td>
+                                <td>12</td>
+                                <td>INGABIRE Claudine</td>
+                                <td>7am</td>
+                                <td>5am</td>
+                            </tr>
+                            <tr>
+                                <td>3/11/2021</td>
+                                <td>12</td>
+                                <td>INGABIRE Claudine</td>
+                                <td>7am</td>
+                                <td>5am</td>
+                            </tr>
+                            <tr>
+                                <td>3/11/2021</td>
+                                <td>12</td>
+                                <td>INGABIRE Claudine</td>
+                                <td>7am</td>
+                                <td>5am</td>
+                            </tr>
+                            <tr>
+                                <td>3/11/2021</td>
+                                <td>12</td>
+                                <td>INGABIRE Claudine</td>
+                                <td>7am</td>
+                                <td>5am</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        //Menutoggle
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+
+        toggle.onclick = function() {
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+
+        }
+
+        //add hovered class in selected list item
+        let list = document.querySelectorAll('.navigation li');
+
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('hovered'));
+            this.classList.add('hovered');
+        }
+        list.forEach((item) =>
+            item.addEventListener('mouseover', activeLink));
+    </script>
+</body>
+
+</html>
